@@ -24,6 +24,8 @@ class Solution {
 
 	for(int i = sLevel; i < str.length(); i++){
 	    String curString = str.substring(sLevel, i + 1);
+
+	    // avoid abab -> 1111
 	    if(set.contains(curString)){
 		continue;
 	    }
